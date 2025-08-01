@@ -1,0 +1,129 @@
+body {
+    background-color: #303030;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-add-notes {
+    background-color: #d81b9b;
+    color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-add-notes:hover {
+    background-color: black;
+    color: #d81b9b
+}
+
+.botao-fixo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.btn-add-radius {
+    background-color: #d81b9b;
+    color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-add-radius:hover {
+    background-color: #b31781;
+    color: #FFFFFF;
+}
+
+
+.btn-add {
+    background-color: #f64194;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #b9246a;
+    color: #FFFFFF;
+}
+
+.form-title {
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #d81b9b;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+}
+
+.text-pink {
+   color: #f64194;
+}
+
+.input {
+    color: black;
+    font-size: 1.3rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.3em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus~.input-border {
+    width: 100%;
+}
+
+
+.fake-input {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: black;
+    padding-inline: 0.5em;
+    padding-block: 0.3em;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    background-color: transparent;
+    cursor: default;
+}
+
+.input-border.full {
+    width: 100% !important;
+    background: var(--border-after-color);
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-body-radius {
+    border-radius: 30px;
+}
+
+.trash-icon {
+    cursor: pointer;
+    margin-left: 0.7rem;
+}
